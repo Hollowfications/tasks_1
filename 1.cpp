@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cstdlib>
 #include <cmath>
 
 using namespace std;
@@ -25,14 +26,14 @@ int main()
                 if (discriminant == 0)
                 {
                     x = -b/(2*c);
-                    cout << x;
+                    cout << "x1 = x2 = " x;
                 }
                 else
                 {
                     x = (-b + discriminant)/2;
-                    cout << x << endl;
+                    cout << "x1 = " << x << endl;
                     x = (-b - discriminant)/2;
-                    cout << x << endl;
+                    cout << "x2 = " << x << endl;
                 }
 
         }
