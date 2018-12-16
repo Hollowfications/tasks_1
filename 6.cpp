@@ -11,18 +11,18 @@ int main()
         int *a, *b;
         size_t c = n - 1;
         cout << "enter elements of array: " << endl;
-        a = new int(n);
-        b = new int(c);
+        a = new int[n];
+        b = new int[c];
         for (int i = 0; i < n; i++)
                 cin >> a[i];
 
 
-        for (int i = 0; i < c; i++)
+        for (int i = 1; i < c; i++)
                 b[i] = a[i] + a[i+1];
 
         int min = b[0];
 
-        for (int i = 0; i < c; i++)
+        for (int i = 1; i < c; i++)
                 if (b[i] <=  min)
                         min = b[i];
 
