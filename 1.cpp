@@ -6,10 +6,10 @@ using namespace std;
 
 int main()
 {
-        int a;
-        int b;
-        int c;
-        int discriminant;
+        float a;
+        float b;
+        float c;
+        float discriminant;
         float x;
         cout << "enter coefficients of equation:" << endl;
         cin >> a >> b >> c;
@@ -25,14 +25,14 @@ int main()
                 discriminant = sqrt(discriminant);
                 if (discriminant == 0)
                 {
-                    x = -b/(2*c);
+                    x = -b/(2*a);
                     cout << "x1 = x2 = " x;
                 }
                 else
                 {
-                    x = (-b + discriminant)/2;
+                    x = (-b + discriminant)/2*a;
                     cout << "x1 = " << x << endl;
-                    x = (-b - discriminant)/2;
+                    x = (-b - discriminant)/2*a;
                     cout << "x2 = " << x << endl;
                 }
 
