@@ -6,11 +6,8 @@ using namespace std;
 
 int main()
 {
-        float a;
-        float b;
-        float c;
-        float discriminant;
-        float x;
+        float a, b, c;
+        float discriminant, x;
         cout << "enter coefficients of equation:" << endl;
         cin >> a >> b >> c;
         cout << "(" << a << ")*x^2 + (" << b << ")*x + (" << c << ") = 0"
